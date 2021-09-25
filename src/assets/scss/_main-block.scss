@@ -1,0 +1,128 @@
+.main {
+    .container {
+        @extend %container;
+    }
+
+    &__wrapper {
+        display: flex;
+
+        position: relative;
+
+        margin-bottom: 150px;
+    }
+
+    &__inner {
+        background-color: #fbf0e1;
+        border-radius: 30px 0px 0px 30px;
+
+        padding-left: 98px;
+        padding-bottom: 90px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__title-h1 {
+        @include text(50px, 800, 40px, $textColor);
+    }
+
+    &__title-h2 {
+        @include text(40px, 800, 50px, $textColor);
+        margin-bottom: 45px;
+    }
+
+    &__par {
+        @include text(22px, 200, 27px, $textColor);
+        margin-bottom: 82px;
+        
+        span {
+            font-weight: 800;
+        }
+    }
+
+    &__navigation {
+        height: 109px;
+        width: 1400px;
+        background-color: #ffffff;
+        border-radius: 15px;
+
+        display: flex;
+
+        position: absolute;
+        bottom: 18%;
+    }
+
+
+    &__list {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-left: 25px;
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__item:not(:last-child) {
+        border-right: 1px solid #cccccc;
+        height: 63.5px;
+    }
+
+    &__link {
+        @include text(22px, 700, 26px, $textColor);
+        text-transform: uppercase;
+
+        align-self: center;
+    }
+
+    &__link {
+       margin-right: 40px;
+       margin-left: 40px;
+    }
+
+    &__input {
+        display: flex;
+        align-items: center;
+
+        position: relative;
+    }
+
+    &__input::before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        background-image: url(./../images/loupe.png);
+
+        position: absolute;
+        left: 5%;
+    }
+
+    &__search {
+        width: 349px;
+        height: 82px;
+        border-radius: 10px;
+        background-color: #ecebeb;
+        border: 1px solid #dfdede;
+        outline: none;
+
+        @include text(25px, 400, 26px, $textColor);
+
+        padding-left: 80px;
+        margin-right: 10px;
+    }
+    
+    &__btn {
+        width: 153px;
+        height: 82px;
+        border-radius: 10px;
+        background-color: #000000;
+        
+        @include text(18px, 400, 21px, $buttonTextColor);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

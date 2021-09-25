@@ -1,0 +1,88 @@
+.header {
+    background-color: $primaryColor;   
+        
+    .container {
+        @extend %container;
+    }
+
+    &__logo {
+        margin-right: 88px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo-title {
+        @include text(18px, 400, 21px, $textColor);
+        width: 50px;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-top: 16px;
+        margin-bottom: 63px;
+    }
+
+    &__wrap-left {
+        display: flex;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+   }
+
+   &__wrap-right {
+       display: flex;
+       align-items: center;
+   }
+
+ 
+
+
+    &__list {
+        display: flex;
+    }
+
+    &__link {
+        @include text(18px, 400, 21px, $textColor);
+    }
+
+    &__item {
+        margin-right: 74px;
+    }
+
+    &__opening-hours {
+        margin-right: 74px;
+    }
+
+    &__day {
+        @include text(18px, 400, 21px, $textColorVeryLight);
+    }
+
+    &__time {
+        margin-right: 74px;
+    }
+
+    &__phone {
+        @include text(18px, 400, 21px, $textColor);
+    }
+
+    &__btn {
+        width: 184px;
+        height: 53px;
+        border-radius: 30px;
+
+        background-color: $buttonColor;
+        @include text(18px, 400, 21px, $buttonTextColor);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-right: 74px;
+    }
+   
+}

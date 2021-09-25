@@ -1,0 +1,33 @@
+// Colors
+$primaryColor: #ffffff;
+$textColor: #000000;
+$textColorLight: #808080;
+$textColorVeryLight: #b3b3b3;
+$buttonTextColor: #ffffff;
+$buttonColor: #020200;
+
+
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    ld: 1280px,
+    xl: 1440px
+);
+
+
+%container {
+        padding: 0 15px;
+        width: 100%;
+        max-width: 1610px;
+        margin: auto;
+
+        // @media  screen and (min-width: 576px) {
+        //     padding: 0 35px;
+        // }
+        // @media  screen and (min-width: 768px) {
+        //     padding: 0 50px;
+        // }
+        // @media  screen and (min-width: 1280px) {
+        //     padding: 0px;
+        // }
+}

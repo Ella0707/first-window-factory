@@ -1,0 +1,30 @@
+@import "./abstracts/vars";
+@import "./abstracts/mixins";
+@import "./normalize";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    min-width: 320px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+@import './header';
+@import './_main-block';
+@import './about-us';
