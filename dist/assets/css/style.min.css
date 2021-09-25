@@ -1,7 +1,7 @@
-.header .container, .main .container, .about-us .container {
+.header .container, .main .container, .about-us .container, .sale .container, .about-windows .container {
   padding: 0 15px;
   width: 100%;
-  max-width: 1610px;
+  max-width: 1665px;
   margin: auto; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -330,7 +330,7 @@ li {
 .header {
   background-color: #ffffff; }
   .header__logo {
-    margin-right: 88px;
+    margin-right: 118px;
     display: flex;
     align-items: center; }
   .header__logo-title {
@@ -454,9 +454,7 @@ li {
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
-  align-self: center; }
-
-.main__link {
+  align-self: center;
   margin-right: 40px;
   margin-left: 40px; }
 
@@ -502,7 +500,7 @@ li {
 
 .about-us__grid {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 0.9fr;
   grid-template-columns: 4fr; }
 
 .about-us__img-wrap {
@@ -510,7 +508,8 @@ li {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
-  position: relative; }
+  position: relative;
+  margin-bottom: 150px; }
   .about-us__img-wrap::after {
     content: "";
     background-image: url(./../images/about-us__pseudo.png);
@@ -574,7 +573,7 @@ li {
   color: #000000;
   display: flex;
   flex-direction: column;
-  width: 552px;
+  width: 645px;
   padding-left: 110px;
   position: relative; }
   .about-us__item:first-child::before {
@@ -602,7 +601,7 @@ li {
     top: 0%;
     left: 0%; }
 
-.about-us__item {
+.about-us__item:not(:last-child) {
   margin-bottom: 104px; }
 
 .about-us__subtitle {
@@ -616,7 +615,153 @@ li {
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 5;
-  padding-top: 80px;
+  padding-top: 30px;
   max-width: 100%; }
+
+.sale__wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #E9EBE7;
+  border-radius: 30px;
+  margin-bottom: 150px; }
+
+.sale__img {
+  max-width: 594px; }
+
+.sale__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 62px 75px 62px 0px; }
+
+.sale__title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 58px;
+  color: #000000; }
+
+.sale__subtitle {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #000000; }
+
+.sale__date {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #000000; }
+
+.sale__btn {
+  display: flex;
+  align-items: flex-end; }
+
+.sale__link {
+  width: 233px;
+  height: 82px;
+  border-radius: 20px;
+  background-color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 20px 20px 0px; }
+
+.about-windows__title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 58px;
+  color: #000000;
+  margin-bottom: 80px; }
+
+.about-windows__wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.about-windows__left-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.about-windows__par {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #000000;
+  width: 800px; }
+
+.about-windows__item {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+  color: #000000; }
+  .about-windows__item span {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000000; }
+
+.about-windows__btn {
+  width: 247px;
+  height: 71px;
+  border-radius: 10px;
+  background-color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.about-windows__more-info {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  width: 345px;
+  height: 38px; }
+
+.about-windows__right-block {
+  padding-right: 30px; }
+
+.about-windows__item {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  width: 645px;
+  padding-left: 110px;
+  position: relative; }
+  .about-windows__item:first-child::before {
+    content: "";
+    background-image: url(./../images/window_1.png);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0%;
+    left: 0%; }
+  .about-windows__item:nth-child(2)::before {
+    content: "";
+    background-image: url(./../images/window_2.png);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0%;
+    left: 0%; }
+  .about-windows__item:last-child::before {
+    content: "";
+    background-image: url(./../images/window_3.png);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0%;
+    left: 0%; }
 
 /*# sourceMappingURL=style.min.css.map */
