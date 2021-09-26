@@ -13,22 +13,31 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+
+        margin-bottom: 150px;
     }
 
     &__left-block {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
 
     &__par {
         @include text(24px, 400, 32px, $textColor);
         width: 800px;
-        // margin-bottom: 40px;
+        margin-bottom: 30px;
     }
+
+    &__list {
+        padding-top: 55px;
+        margin-bottom: 35px;
+    }
+    
 
     &__item {
         @include text(30px, 500, 35px, $textColor);
+
+        margin-bottom: 60px;
 
         span {
             @include text(24px, 400, 28px, $textColor);
@@ -46,6 +55,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        margin-bottom: 40px;
     }
 
     &__more-info {
@@ -56,10 +67,62 @@
     }
 
     &__right-block {
+        display: flex;
+        flex-direction: column;
+
         padding-right: 30px;
+
+        position: relative;
     }
 
+    &__right-block {
+        &::after {
+            content: "";
+            background-image: url(./../images/about-windows__pseudo.png);
+            width: 631px;
+            height: 865px;
 
+            position: absolute;
+            transform: rotate(180deg);
+            top: 5%;
+            left: 5%;
+            z-index: -2;
+        }
+    }
+    
+
+    &__img {
+        margin-bottom: 45px;
+    }
+
+    &__garant {
+        display: flex;
+        flex-direction: column;
+        padding-left: 225px;
+        position: relative;
+
+
+        @include text(30px, 700, 35px, $textColor);
+
+        span {
+            @include text(24px, 400, 45px, $textColor);
+        }
+
+    }
+
+    &__garant {
+        &::before {
+            content: "";
+            background-image: url(./../images/about-windows__garant.png);
+            background-repeat: no-repeat;
+            width: 90px;
+            height: 90px;
+
+            position: absolute;
+            top: -10%;
+            left: 19%;
+        }
+    }
 
 
 

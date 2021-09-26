@@ -1,0 +1,31 @@
+.windows {
+    .container {
+        @extend %container;
+    }
+
+    &__title {
+       
+       margin-bottom: 80px;
+    }
+
+    &__heading {
+        @include text(40px, 500, 47px, $textColor);
+
+        margin-bottom: 80px;
+    }
+
+    &__par {
+        @include text(30px, 400, 35px, $textColor);
+
+        span {
+            font-weight: 500;
+        }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}

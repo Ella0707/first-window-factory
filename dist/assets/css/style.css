@@ -1,7 +1,7 @@
-.header .container, .main .container, .about-us .container {
+.header .container, .main .container, .about-us .container, .sale .container, .about-windows .container {
     padding: 0 15px;
     width: 100%;
-    max-width: 1610px;
+    max-width: 1665px;
     margin: auto;
 }
 
@@ -372,7 +372,7 @@ li {
 }
 
 .header__logo {
-    margin-right: 88px;
+    margin-right: 118px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -418,12 +418,15 @@ li {
 }
 
 .header__list {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.header__link {
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
     color: #000000;
-    display: -ms-flexbox;
-    display: flex;
 }
 
 .header__item {
@@ -474,6 +477,7 @@ li {
     display: -ms-flexbox;
     display: flex;
     position: relative;
+    margin-bottom: 150px;
 }
 
 .main__inner {
@@ -554,9 +558,6 @@ li {
     text-transform: uppercase;
     -ms-flex-item-align: center;
     align-self: center;
-}
-
-.main__link {
     margin-right: 40px;
     margin-left: 40px;
 }
@@ -608,4 +609,347 @@ li {
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
+}
+
+.about-us__grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 0.9fr;
+    grid-template-columns: 4fr;
+}
+
+.about-us__img-wrap {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.about-us__img-wrap::after {
+    content: "";
+    background-image: url(./../images/about-us__pseudo.png);
+    width: 630px;
+    height: 645px;
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    z-index: -1;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.about-us__img-1 {
+    max-width: 100%;
+}
+
+.about-us__descr {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-column-gap: 83px;
+    -moz-column-gap: 83px;
+    column-gap: 83px;
+}
+
+.about-us__title {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    width: 227px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000000;
+}
+
+.about-us__span {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #000000;
+    margin-bottom: 38px;
+}
+
+.about-us__principle {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.about-us__heading {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 59px;
+    color: #000000;
+    margin-bottom: 80px;
+}
+
+.about-us__item {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+    color: #000000;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 645px;
+    padding-left: 110px;
+    position: relative;
+}
+
+.about-us__item:first-child::before {
+    content: "";
+    background-image: url(./../images/about-us__price.png);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.about-us__item:nth-child(2)::before {
+    content: "";
+    background-image: url(./../images/about-us__garant.png);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.about-us__item:last-child::before {
+    content: "";
+    background-image: url(./../images/about-us__man.png);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.about-us__item:not(:last-child) {
+    margin-bottom: 104px;
+}
+
+.about-us__subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000000;
+}
+
+.about-us__img-2 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    padding-top: 30px;
+    max-width: 100%;
+}
+
+.sale__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #E9EBE7;
+    border-radius: 30px;
+    margin-bottom: 150px;
+}
+
+.sale__img {
+    max-width: 594px;
+}
+
+.sale__wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 62px 75px 62px 0px;
+}
+
+.sale__title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58px;
+    color: #000000;
+}
+
+.sale__subtitle {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+    color: #000000;
+}
+
+.sale__date {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+    color: #000000;
+}
+
+.sale__btn {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.sale__link {
+    width: 233px;
+    height: 82px;
+    border-radius: 20px;
+    background-color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #ffffff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0px 20px 20px 0px;
+}
+
+.about-windows__title {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 58px;
+    color: #000000;
+    margin-bottom: 80px;
+}
+
+.about-windows__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.about-windows__left-block {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.about-windows__par {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #000000;
+    width: 800px;
+}
+
+.about-windows__item {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+    color: #000000;
+}
+
+.about-windows__item span {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000000;
+}
+
+.about-windows__btn {
+    width: 247px;
+    height: 71px;
+    border-radius: 10px;
+    background-color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #ffffff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.about-windows__more-info {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000000;
+    border-bottom: 1px solid #000000;
+    width: 345px;
+    height: 38px;
+}
+
+.about-windows__right-block {
+    padding-right: 30px;
+}
+
+.about-windows__item {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+    color: #000000;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 645px;
+    padding-left: 110px;
+    position: relative;
+}
+
+.about-windows__item:first-child::before {
+    content: "";
+    background-image: url(./../images/window_1.png);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.about-windows__item:nth-child(2)::before {
+    content: "";
+    background-image: url(./../images/window_2.png);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.about-windows__item:last-child::before {
+    content: "";
+    background-image: url(./../images/window_3.png);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
 }
