@@ -1,0 +1,153 @@
+.order {
+    .container {
+        @extend %container;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 272px;
+        width: 100%;
+
+        background-color: #E9EBE7;
+        border-radius: 30px;
+
+        padding: 0 45px;
+    }
+
+    &__img-wrap {
+        display: flex;
+        align-items:center;
+
+        position: relative;
+    }
+
+    &__img-wrap {
+        &::after {
+            content: "";
+            background-image: url(./../images/order__arrow.png);
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 170px;
+
+            position: absolute;
+            right: 5%;
+            top: 1%;
+        }
+    
+    }
+
+    &__img {
+        margin-right: 26px;
+    }
+
+    &__span {
+        @include text(24px, 400, 30px, $textColor);
+    }
+
+    &__title-top {
+        @include text(40px, 400, 50px, $textColor);
+        margin-bottom: 10px;
+    }
+
+    &__title-down {
+        @include text(30px, 400, 40px, $textColor);
+    }
+
+    &__form-wrap {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__title {
+        @include text(40px, 300, 50px, $textColor);
+
+        margin-bottom: 31px;
+       
+        span {
+            font-weight: 400;
+        }
+    }
+
+    &__form {
+        margin-bottom: 14px;
+    }
+
+    &__name {
+        height: 60px;
+        width: 240px;
+
+        padding-left: 15px;
+        margin-right: 40px;
+
+        border-radius: 5px;
+
+
+        outline: none;
+        border: none;
+
+        background-color: #ffffff;
+
+        @include text(24px, 400, 50px, $textColor);
+
+        &::placeholder {
+            @include text(18px, 400, 30px, $textColorLight);
+        }
+    }
+
+    &__phone {
+        height: 60px;
+        width: 240px;
+
+        padding-left: 15px;
+
+        outline: none;
+        border: none;
+
+        border-radius: 5px;
+
+        background-color: #ffffff;
+
+        @include text(24px, 400, 50px, $textColor);
+
+        &::placeholder {
+            @include text(18px, 400, 30px, $textColorLight);
+        }
+
+        }
+
+        &__label {
+            @include text(14px, 300, 30px, $textColorLight);
+        }
+
+        &__link {
+            color: $textColor;
+            font-weight: 400;
+        }
+
+        &__btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-right: 10px;
+
+
+            width: 172px;
+            height: 60px;
+            background-color: #020200;
+
+            border-radius: 5px;
+
+            @include text(18px, 400, 21px, $buttonTextColor);
+        }
+
+        &__checkbox {
+            width: 17px;
+            height: 17px;
+        }
+}
+

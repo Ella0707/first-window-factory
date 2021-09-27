@@ -22,9 +22,28 @@
         }
     }
 
+    &__wrapper {
+        position: relative;
+    }
+
     &__box {
         display: flex;
         justify-content: space-between;
+
+        margin-bottom: 230px;
+    }
+
+    &__link {
+        @include text(24px, 400, 24px, $textColor);
+        border-bottom: 1px solid #000000;
+        
+        display: block;
+        height: 35px;
+        width: 195px;
+
+        position: absolute;
+        right: 0%;
+        bottom: -9%;
     }
 
 
