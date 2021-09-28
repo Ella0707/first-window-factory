@@ -1,0 +1,32 @@
+.footer {
+    .container {
+        @extend %container;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        @include text(24px, 500, 28px, $textColor);
+    }
+
+    &__about-link {
+        @include text(20px, 500, 28px, $textColorLight);
+    }
+
+    &__about-link {
+        &:first-child {
+            display: flex;
+        }
+    }
+
+    &__buyers-link {
+        @include text(20px, 500, 28px, $textColorLight);
+    }
+
+    &__contacts-link {
+        @include text(20px, 500, 28px, $textColorLight);
+    }
+}
