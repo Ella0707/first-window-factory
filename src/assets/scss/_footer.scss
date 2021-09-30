@@ -5,11 +5,17 @@
 
     &__wrap {
         display: flex;
-        justify-content: space-between;
+        column-gap: 200px;
+        margin-bottom: 40px;
     }
 
     &__title {
         @include text(24px, 500, 28px, $textColor);
+        margin-bottom: 51px;
+    }
+
+    &__about-item {
+        margin-bottom: 30px;
     }
 
     &__about-link {
@@ -20,13 +26,77 @@
         &:first-child {
             display: flex;
         }
+    } 
+
+    &__about-link-delivery {
+        @include text(20px, 300, 23px, $textColorLight);
+        border-bottom: 1px solid;
+        margin-bottom: 30px;
+    }
+
+    &__buyers-item {
+        margin-bottom: 30px;
     }
 
     &__buyers-link {
         @include text(20px, 500, 28px, $textColorLight);
     }
 
+    &__contacts-item {
+        margin-bottom: 30px;
+
+        position: relative;
+    }
+
     &__contacts-link {
         @include text(20px, 500, 28px, $textColorLight);
+
+    }
+
+    &__contacts-item {
+        &:first-child {
+            &::before {
+                content: "";
+                background-image: url(./../images/footer__location.png);
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;
+
+                position: absolute;
+                top: 0;
+                left: -20%;
+            }
+        }
+
+
+        &:last-child {
+            &::before {
+                content: "";
+                background-image: url(./../images/footer__tel.png);
+                background-repeat: no-repeat;
+
+                width: 30px;
+                height: 30px;
+
+                position: absolute;
+                top: 0;
+                left: -20%;
+            }
+        }
+    }
+
+    &__social {
+        padding-left: 30px;
+    }
+
+    &__social-list {
+        display: flex;
+    }
+
+    &__social-item {
+        &:not(:last-child) {
+            margin-right: 70px;
+        }
+       
     }
 }

@@ -1,4 +1,4 @@
-.header .container, .main .container, .about-us .container, .sale .container, .about-windows .container, .windows .container, .order .container {
+.header .container, .main .container, .about-us .container, .sale .container, .about-windows .container, .windows .container, .order .container, .map .container, .footer .container {
     padding: 0 15px;
     width: 100%;
     max-width: 1665px;
@@ -1218,6 +1218,7 @@ li {
     background-color: #E9EBE7;
     border-radius: 30px;
     padding: 0 45px;
+    margin-bottom: 150px;
 }
 
 .order__img-wrap {
@@ -1420,4 +1421,48 @@ li {
 .order__checkbox {
     width: 17px;
     height: 17px;
+}
+
+.map {
+    margin-bottom: 67px;
+}
+
+.footer__wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.footer__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #000000;
+}
+
+.footer__about-link {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #808080;
+}
+
+.footer__about-link:first-child {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer__buyers-link {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #808080;
+}
+
+.footer__contacts-link {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #808080;
 }
